@@ -5,51 +5,52 @@ import RenderTag from "./RenderTag";
 
 const hotQuestions = [
   {
-    _id: 1,
-    title: " how do i",
+    _id: "1",
+    title:
+      "Best practices for data fetching in a Next.js application with Server-Side Rendering (SSR)?",
   },
   {
-    _id: 2,
-    title: " how do i",
+    _id: "2",
+    title: "Can I get the course for free?",
   },
   {
-    _id: 3,
-    title: " how do i",
+    _id: "3",
+    title: "Redux Toolkit Not Updating State as Expected",
   },
   {
-    _id: 4,
-    title: " how do i",
+    _id: "4",
+    title: "How do I use express as a custom server in NextJS?",
   },
   {
-    _id: 5,
-    title: " how do i",
+    _id: "5",
+    title: "Async/Await Function Not Handling Errors Properly",
   },
 ];
 
 const popularTags = [
   {
-    _id: 1,
-    title: "javascript",
+    _id: "1",
+    name: "javascript",
     totalQuestions: 5,
   },
   {
-    _id: 2,
-    title: "react",
+    _id: "2",
+    name: "react",
     totalQuestions: 5,
   },
   {
-    _id: 3,
-    title: "next",
+    _id: "3",
+    name: "next",
     totalQuestions: 5,
   },
   {
-    _id: 4,
-    title: "vue",
+    _id: "4",
+    name: "vue",
     totalQuestions: 2,
   },
   {
-    _id: 5,
-    title: "redux",
+    _id: "5",
+    name: "redux",
     totalQuestions: 10,
   },
 ];
@@ -87,7 +88,7 @@ const RightSidebar = () => {
             <RenderTag
               key={tag._id}
               _id={tag._id}
-              name={tag.title}
+              name={tag.name}
               totalQuestions={tag.totalQuestions}
               showCount
             />
